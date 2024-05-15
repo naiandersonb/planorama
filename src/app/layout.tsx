@@ -1,4 +1,4 @@
-import { Header } from "@/components/header";
+import { AppLayout } from "@/components/app-layout";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
@@ -25,8 +25,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Header />
-          {children}
+          <AppLayout>{children}</AppLayout>
         </ThemeProvider>
       </body>
     </html>

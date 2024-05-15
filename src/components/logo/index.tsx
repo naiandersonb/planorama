@@ -14,17 +14,20 @@ export function LogoIcon() {
   );
 }
 
-type LogoNameProps = ComponentProps<'p'> 
+type LogoNameProps = ComponentProps<"p">;
 
-export function LogoName({...props}: LogoNameProps) {
-  const {className} = props
+export function LogoName({ ...props }: LogoNameProps) {
+  const { className } = props;
   return <p className={cn("text-neutral-50", className)}>Planorama</p>;
 }
 
-interface LogoProps {
+interface LogoProps extends ComponentProps<"div"> {
   children: ReactNode;
 }
 
-export function Logo({ children }: LogoProps) {
-  return <div className="flex items-center gap-4">{children}</div>;
+export function Logo({ children, ...props }: LogoProps) {
+  const { className } = props;
+  return (
+    <div className={cn("flex items-center gap-4", className)}>{children}</div>
+  );
 }
