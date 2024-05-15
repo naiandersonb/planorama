@@ -9,8 +9,10 @@ interface AppLayoutProps {
 export function AppLayout({ children }: AppLayoutProps) {
   return (
     <div className="flex w-full justify-end">
+      <div className="md:flex hidden">
       <Sidebar />
-      <section className="w-full max-w-[calc(100%-230px)] mt-20">
+      </div>
+      <section className="w-full md:max-w-[calc(100%-230px)] mt-20">
         <Header />
         <main>{children}</main>
       </section>

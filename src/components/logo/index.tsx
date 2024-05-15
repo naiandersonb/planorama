@@ -18,7 +18,7 @@ type LogoNameProps = ComponentProps<"p">;
 
 export function LogoName({ ...props }: LogoNameProps) {
   const { className } = props;
-  return <p className={cn("text-neutral-50", className)}>Planorama</p>;
+  return <p className={cn("dark:text-neutral-50 text-neutral-950", className)}>Planorama</p>;
 }
 
 interface LogoProps extends ComponentProps<"div"> {
