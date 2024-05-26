@@ -10,6 +10,10 @@ const config = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      ibmPlexMono: 'var(--ibmPLex)',
+      dmSans: 'var(--dmSans)',
+    },
     container: {
       center: true,
       padding: "2rem",
