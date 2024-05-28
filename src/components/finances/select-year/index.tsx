@@ -42,10 +42,10 @@ export function SelectYear({
       onValueChange={(value) => handleChangeYear(value)}
       defaultValue={defaultYear.toString()}
     >
-      <SelectTrigger className="md:w-[180px] w-[120px] dark:bg-slate-900 bg-slate-50">
+      <SelectTrigger className="md:w-[180px] w-[120px] dark:bg-slate-950 bg-slate-50">
         <SelectValue placeholder="Theme" />
       </SelectTrigger>
-      <SelectContent className="dark:bg-slate-900 bg-slate-50 max-h-56">
+      <SelectContent className="dark:bg-slate-950 bg-slate-50 max-h-56">
         {years.map((year) => (
           <SelectItem key={year} value={year.toString()}>
             {year}

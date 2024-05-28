@@ -16,7 +16,7 @@ export function MonthCard({
 }: MonthCardProps) {
   return (
     <Link key={month.slug} href={`/${month.slug}?year=${year}`}>
-      <div className="dark:bg-slate-900 bg-slate-50 flex flex-col rounded-lg h-52 p-6 border dark:border-slate-800 border-slate-200">
+      <div className="dark:bg-slate-950 bg-slate-50 flex flex-col rounded-lg h-52 p-6 border-slate-200">
         <div>
           <h2 className="uppercase text-xl font-medium">
             {month.fullName.slice(0, 3)}/{year}

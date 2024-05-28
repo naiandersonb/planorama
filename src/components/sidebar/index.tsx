@@ -13,10 +13,10 @@ export function Sidebar() {
   };
 
   const isSelectedStyle =
-    "dark:bg-slate-800 bg-slate-200 dark:text-slate-50 text-slate-950";
+    "dark:bg-slate-900 bg-slate-200 dark:text-slate-50 text-slate-950";
 
   return (
-    <aside className="fixed top-0 left-0 bottom-0 p-4 max-w-64 dark:bg-slate-900 bg-slate-50">
+    <aside className="fixed top-0 left-0 bottom-0 p-4 max-w-64 dark:bg-slate-950 bg-slate-50">
       <Link href='/dashboard'>
       <Logo className="py-4">
         <LogoIcon />
@@ -28,7 +28,7 @@ export function Sidebar() {
         {sidebarItems.map((item) => (
           <Link href={item.link} key={item.title}>
             <div
-              className={`flex w-full px-4 items-center gap-4 h-12 dark:hover:bg-slate-800 hover:bg-slate-100 rounded-md ${
+              className={`flex w-full px-4 items-center gap-4 h-12 dark:hover:bg-slate-900 hover:bg-slate-100 rounded-md ${
                 checkPathname(item.link) && isSelectedStyle
               }`}
             >
