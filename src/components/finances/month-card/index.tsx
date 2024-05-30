@@ -15,7 +15,7 @@ export function MonthCard({
   year,
 }: MonthCardProps) {
   return (
-    <Link key={month.slug} href={`/${month.slug}?year=${year}`}>
+    <Link key={month.slug} href={`/finances/month/${month.slug}?year=${year}`}>
       <div className="dark:bg-slate-950 bg-slate-50 flex flex-col rounded-lg h-52 p-6 border-slate-200">
         <div>
           <h2 className="uppercase text-xl font-medium">
